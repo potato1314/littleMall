@@ -7,11 +7,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 // export default 默认输出
 import Index from '@/views/static/index.vue'
 import LayoutAdmin from '@/layout/admin/index.vue'
-//白名单
-const whiteList = [
-    "/",
-    "/hello"
-]
+
 import { useUserStore } from '../store/user'
 
 import home from "@/views/admin/sms-home/home.vue"
@@ -24,6 +20,12 @@ import first from "@/views/static/first.vue"
 
 
 import hello from "@/views/static/hello.vue"
+
+//白名单
+const whiteList = [
+    "/",
+    "/hello"
+]
 
 //路由表
 const routes = [
